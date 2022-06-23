@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back1"
+    tools:context=".ResultActivity">
+
+    <TextView
+        android:id="@+id/textViewcorrectans"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="152dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center|left"
+        android:text="Total Correct Answer : 0"
+        android:textColor="#37B63D"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewsuccess"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center|left"
+        android:text="Total Success Rate : 0%"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewemptyans"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewemptyans"
+        app:layout_constraintTop_toBottomOf="@+id/textViewemptyans" />
+
+    <TextView
+        android:id="@+id/textViewemptyans"
+        android:layout_width="311dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center|left"
+        android:text="Total Empty Answer : 0"
+        android:textColor="#1E88E5"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewincorrectans"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewincorrectans"
+        app:layout_constraintTop_toBottomOf="@+id/textViewincorrectans" />
+
+    <TextView
+        android:id="@+id/textViewincorrectans"
+        android:layout_width="321dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center|left"
+        android:text="Total Incorrect Answer : 0"
+        android:textColor="#E10C13"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textViewcorrectans"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewcorrectans"
+        app:layout_constraintTop_toBottomOf="@+id/textViewcorrectans" />
+
+    <Button
+        android:id="@+id/buttonAgain"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#092553"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center"
+        android:text="Play Again"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewsuccess" />
+
+    <Button
+        android:id="@+id/buttonQuit"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="#092553"
+        android:text="Quit"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAgain" />
+</android.support.constraint.ConstraintLayout>
